@@ -1,100 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="practicecheapdate.css" />
     <title>Cheap Date</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
-    <link href="styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+      <!-- Header -->
+    <header>
+
+      <div class="container">
+
+        <!-- just the text at the top -->
+
+        <div id="cheapDate">
+<!-- Targeting the word cheap with this span class -->
+          <h1><span class="highlight">Cheap</span> Date</h1>
+          
+          <!-- this ends the div cheapDate -->
+        </div>
+        
+        <nav>
+<!-- my unodered list - not necessary but just doing it for practice -->
+          <ul>
+<li class="current"><a href="index.html">Home</a></li>
+<li><a href="index.html">?????</a></li>
+<li class="current"><a href="index.html">??????</a></li>
+          </ul>
+        
+        </nav>
+      </div>
+    </header>
+<!-- This is where the picture we have made will go -->
+    <section id="imageId">
+        <div class="container">
+            <h1>
+                Look for a movie and a meal
+            </h1>
+
+            <p>I don't know if you all want any more text on this page but if we do we can put it here</p>
+        </div>
+<!-- this ends the section where our picture will go -->
+    </section>
+<hr>
+<!-- where our search inputs will be  -->
+    <section id="searchId">
+        <div class="container">
+            <h1>Possible text here as well</h1>
+
+            <form>
+                <input type="search" placeholder="Insert Protein here">
+                <button type="submit" class="button_1">FOOD</button>
+
+                <input type="search" placeholder="Insert Date here">
+                <button type="submit" class="button_1">TV</button>
+            </form>
+        </div>
+
+        <!-- this ends the section with our search inputs -->
+    </section>
+
+<!-- This section will populate our results with the recipe, I just put 3 placeholder type deals in here that we will have to actually take out and populate through the JS -->
+    <section id="resultsRecipe">
+            <div class="container">
+                
+                <!-- more placeholders then anything will have to take out  -->
+                <div class="box">
+                    <img src="">
+                    <h3>RESULTS 1</h3>
+                    <p>possibly a brief description of recipe?</p>
+                </div>
+
+                <div class="box">
+                    <img src="">
+                        <h3>RESULTS 2</h3>
+                        <p>possibly a brief description of recipe?</p>
+                    </div>
+
+                    <div class="box">
+                        <img src="">
+                            <h3>RESULTS 3</h3>
+                            <p>possibly a brief description of recipe?</p>
+                        </div>
 
 
-</head>
 
-<body>
-    <div id="pageintro" class="hoc clear">
-        <!-- ################################################################################################ -->
-        <article>
-            <h3 class="heading">Imperdiet consequat integer est</h3>
-            <p>Tempus leo in dictum lectus urna vitae dolor integer ut nibh ut dapibus etiam in augue phasellus
-                ultricies ligula</p>
-            <p class="font-x1 uppercase bold">Libero cursus malesuada etiam</p>
-            <footer>
-                <ul class="nospace inline pushright">
-                    <label for="site-search">Search the site:</label>
-                    <input type="search" id="site-search" name="q" aria-label="Search through site content">
-
-                    <button>Search</button>
-                    <label for="site-search">Search the site:</label>
-                    <input type="search" id="site-search" name="q" aria-label="Search through site content">
-
-                    <button>Search</button>
-                </ul>
-            </footer>
-        </article>
-        <!-- ################################################################################################ -->
-    </div>
-    <!-- ################################################################################################ -->
-    <div class="wrapper row3">
-        <main class="hoc container clear">
-            <!-- main body -->
-            <!-- ################################################################################################ -->
-            <div class="center btmspace-80">
-                <h6 class="heading">Sed justo sapien donec eget massa</h6>
-                <p class="heading font-x3">Odio vestibulum id lacus vel lorem</p>
-                <p>Ullamcorper dapibus curabitur imperdiet lacus et tincidunt tristique sapien ipsum aliquam nisl a
-                    vehicula nisl nisi in sem duis ut neque eu augue vulputate.</p>
             </div>
-            <ul class="nospace group element btmspace-80">
-                <li class="one_quarter first">
-                    <article><img src="images/demo/320x320.png" alt="">
-                        <div class="txtwrap">
-                            <h6 class="heading">Quis aliquam metus</h6>
-                            <p>Tincidunt curabitur a erat ut nulla rutrum tempus vitae laoreet [&hellip;]</p>
-                            <footer><a href="#">Read More</a></footer>
-                        </div>
-                    </article>
-                </li>
-                <li class="one_quarter">
-                    <article><img src="images/demo/320x320.png" alt="">
-                        <div class="txtwrap">
-                            <h6 class="heading">Rhoncus ut morbi</h6>
-                            <p>Arcu duis interdum ullamcorper quam non porttitor etiam auctor [&hellip;]</p>
-                            <footer><a href="#">Read More</a></footer>
-                        </div>
-                    </article>
-                </li>
-                <li class="one_quarter">
-                    <article><img src="images/demo/320x320.png" alt="">
-                        <div class="txtwrap">
-                            <h6 class="heading">Fermentum rutrum</h6>
-                            <p>Odio id posuere lectus class aptent taciti sociosqu ad litora torquent [&hellip;]</p>
-                            <footer><a href="#">Read More</a></footer>
-                        </div>
-                    </article>
-                </li>
-                <li class="one_quarter">
-                    <article><img src="images/demo/320x320.png" alt="">
-                        <div class="txtwrap">
-                            <h6 class="heading">Et luctus integer</h6>
-                            <p>Per conubia nostra per inceptos himenaeos in molestie euismod ex [&hellip;]</p>
-                            <footer><a href="#">Read More</a></footer>
-                        </div>
-                    </article>
-                </li>
-            </ul>
-            <!-- ################################################################################################ -->
-            <!-- / main body -->
-            <div class="clear"></div>
-        </main>
-    </div>
-</body>
 
-<script src="js/app.js"></script>
-</body>
+<!-- this ends our section with the results for recipes -->
+    </section>
 
+    <section id="resultsTV">
+            <div class="container">
+                
+                <!-- more placeholders then anything will have to take out  -->
+                <div class="box">
+                    <img src="">
+                    <h3>RESULTS 1</h3>
+                    <p>possibly a brief description of TV Show?</p>
+                </div>
+
+                <div class="box">
+                    <img src="">
+                        <h3>RESULTS 2</h3>
+                        <p>possibly a brief description of TV Show?</p>
+                    </div>
+
+                    <div class="box">
+                        <img src="">
+                            <h3>RESULTS 3</h3>
+                            <p>possibly a brief description of TV Show?</p>
+                        </div>
+
+
+
+            </div>
+
+<!-- this ends our section with the results for TV Shows -->
+    </section>
+    
+    
+    <!-- FOOTER -->
+    <footer>
+        <p>Cheap Date ------</p>
+
+    </footer>
+  </body>
 </html>
