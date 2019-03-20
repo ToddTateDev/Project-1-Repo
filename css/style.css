@@ -1,192 +1,212 @@
-body{
-    font-family: arial,Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    /* line-height - amount of space between each line */
-    line-height: 1.5;
-    /* setting no margin or padding right now to see how it goes */
-    padding: 0;
-    margin: 0;
-    background-color: #f4f4f4;
+body {
+  font-family: arial, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  /* line-height - amount of space between each line */
+  line-height: 1.5;
+  /* setting no margin or padding right now to see how it goes */
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
 }
 
 /* anything thats global here */
-.container{
-    width: 80%;
-    margin: auto;
-    overflow:hidden;
-
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
 }
 
 /* moving this up to global variables because I can just target all uls */
-ul{
-    /* whenever I am doing this I am just taking off the default padding */
-margin: 0;
-padding: 0;
-
+ul {
+  /* whenever I am doing this I am just taking off the default padding */
+  margin: 0;
+  padding: 0;
 }
 
-.button_1{
-
-    height: 38px;
-    background: #e8491d;
-    border: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #ffffff;
+.button_1 {
+  height: 38px;
+  background: red;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
 }
 
 /* Header */
-header{
-    /* looking up background color codes sucks  */
-    background: #35424a;
-    color: #ffffff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #e8491d 3px solid;
-
-
+header {
+  /* looking up background color codes sucks  */
+  background: #35424a;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: forestgreen 3px solid;
 }
 
 /* this is for the links that are not necessary */
-header a{
-color: #ffffff;
-/* this takes off that ugly underline */
-text-decoration: none; 
-text-transform: uppercase;
-font-size: 16px;
+header a {
+  color: #ffffff;
+  /* this takes off that ugly underline */
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
-
 /* not required list */
-header li{
-    /* I do not know why I am getting a line underneath float left */
-float: left;
-display: inline;
-padding: 0 20px 0 20px;
-
+header li {
+  /* I do not know why I am getting a line underneath float left */
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
 }
 
 /* this will be the text CheapDate in the top left*/
-header #cheapDate{
-float: left;
-
+header #cheapDate {
+  float: left;
 }
 
-header #cheapDate h1{
-    margin: 0;
+header #cheapDate h1 {
+  margin: 0;
 }
 
 /* this will be the nav bar  */
-header nav{
-    float: right;
-    margin-top: 10px;
+header nav {
+  float: right;
+  margin-top: 10px;
 }
 
 /* I guess we will see if this works, just looking up online looks like .highlight and .current */
 
-header .highlight, header .current a{
-
-    color: #e8491d;
-    font-weight: bold;
-
+header .highlight,
+header .current a {
+  color: red;
+  font-weight: bold;
 }
 
 /* hover over a tags */
-header a:hover{
-color: #cccccc;
-font-weight: bold;
-
+header a:hover {
+  color: #cccccc;
+  font-weight: bold;
 }
-
 
 /* This will be where our cheapdate image will be */
 
-#imageId{
-min-height: 400px;
-/* I do not know why the image won't show up, really testing my patience */
-background-image: url('./img1.jpg');
-background-size: 100%;
+#imageId {
+  min-height: 400px;
+  /* I do not know why the image won't show up, really testing my patience */
+  background-image: url("./img1.jpg");
+  /* background-size: cover;
 background-attachment: fixed;
 background-repeat: no-repeat; 
 text-align: center;
-color: #ffffff;
+color: #ffffff; */
+  background-size: cover;
+  width: auto;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
 
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
 }
 
-#imageId h1{
-margin-top: 100px;
-font-size: 55px;
-margin-bottom: 10px;
+#imageId h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
 }
 
-#imageId p{
-font-size: 20px;
+#imageId p {
+  font-size: 20px;
 }
 
-#searchId{
-
-    padding: 15px;
-    color: whitesmoke;
-    background: #35424a;
+#searchId {
+  padding: 15px;
+  color: whitesmoke;
+  background: #35424a;
+  /* border-bottom: forestgreen 2px solid; */
+  /* border-top: rgb(53, 112, 53) 3px solid; */
 }
 
-#searchId h1{
-    float: left;
-
+#searchId h1 {
+  float: left;
 }
 
-#searchId form{
-    float: right;
-    margin-top: 20px;
+#searchId form {
+  float: right;
+  margin-top: 20px;
 }
 
-#searchId input{
-    padding: 4px;
-    height: 25px;
-    width:250px;
+#searchId input {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
 }
-
 
 /* putting css for the boxes in here because I do not know if we will need this for when we populate it through our program */
 
-#resultsRecipe{
-    margin-top: 20px;
+#resultsRecipe {
+  margin-top: 20px;
 }
 
-#resultsRecipe .box{
-    float:left;
-    width: 30%;
-    padding: 10px;
-    text-align: center;
-
+#resultsRecipe .box {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
 }
 
-#resultsRecipe .box img{
-    width: 90px;
+/* #resultsRecipe .box img{
+    width: 150px;
+    height: 150px;
 
+} */
+
+#resultsTV {
+  margin-top: 20px;
 }
 
-#resultsTV{
-    margin-top: 20px;
+#resultsTV .box {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
 }
 
-#resultsTV .box{
-    float:left;
-    width: 30%;
-    padding: 10px;
-    text-align: center;
-
-}
-
-#resultsTV .box img{
-    width: 90px;
+/* #resultsTV img{
+    width: 150px;
+    height: 150px;
     
+} */
+
+/* .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+/* .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  } */
+
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: red;
+  text-align: center;
 }
 
-footer{
-    padding: 20px;
-    margin-top: 20px;
-    color: #ffffff;
-    background-color: #e8491d;
-    text-align: center;
-}
+
+  

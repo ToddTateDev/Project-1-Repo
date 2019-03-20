@@ -1,7 +1,7 @@
 // // Capture Time Button Click
 $("#add-time").on("click", function (event) {
   event.preventDefault();
-  var tvQueryURL = "http://api.tvmaze.com/schedule?country=US&date=2019-03-24";
+  var tvQueryURL = "https://api.tvmaze.com/schedule?country=US&date=2019-03-24";
   var time = $("#time").val().trim();
   var unixTime = moment(time, "HHmm").unix()
 
@@ -84,6 +84,4 @@ $("#add-ingredient").on("click", function (event) {
     }
   })
 })
-
-
 
