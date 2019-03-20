@@ -18,7 +18,7 @@ $("#add-time").on("click", function (event) {
     console.log(tvResults);
 
     for (var i = 0; i < 3; i++) {
-      var showImage = tvResults[i].show.image.original;
+      var showImage = tvResults[i].show.image.medium;
       var showName = tvResults[i].show.name;
       var showURL = tvResults[i].show.url;
 
